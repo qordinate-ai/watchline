@@ -45,16 +45,18 @@ GitHub: https://github.com/qordinate-ai/watchline-openclaw-plugin
 
 The OpenClaw plugin allows OpenClaw agents to create and manage watches.
 
-Core tools include:
-
-- `start_watch`
-- `continue_watch`
-- `list_watches`
-- `pause_watch`
-- `resume_watch`
-- `delete_watch`
-
 The plugin polls a Watchline channel and injects matched events back into OpenClaw sessions.
+
+### Hermes Plugin
+
+PyPI: https://pypi.org/project/watchline-hermes-plugin/  
+GitHub: https://github.com/qordinate-ai/watchline-hermes-plugin
+
+The Hermes plugin lets Hermes agents use Watchline as an event/wakeup layer.
+
+It gives Hermes agents a way to register watches, keep track of active watches, and receive matching future events without building their own polling loop for every source.
+
+This is useful for agents that need to keep working after the initial user request, especially when the next useful action depends on something changing in an external tool or workflow.
 
 ## WatchBench
 
